@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131822419-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131822419-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-131822419-1');
-</script>
-<meta name="google-site-verification" content="3gSLcNkPdcRODU4nU9oONVl1QPVA0LF1xLCeiAG04Mc" />
+        gtag('config', 'UA-131822419-1');
+    </script>
+    <meta name="google-site-verification" content="3gSLcNkPdcRODU4nU9oONVl1QPVA0LF1xLCeiAG04Mc" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,8 +27,12 @@
     <link href="css/business-casual.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link
+        href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css">
+    <link
+        href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+        rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,14 +45,15 @@
 
 <body>
 
- 
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -69,17 +74,17 @@
                     <li>
                         <a href="pubs.html">Publications</a>
                     </li>
-					 <li>
+                    <li>
                         <a href="peres.html">Presentations</a>
                     </li>
-					<li>
+                    <li>
                         <a href="research.html">Research</a>
                     </li>
-					<li>
+                    <li>
                         <a href="teaching.html">Teaching</a>
                     </li>
 
-                       
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -92,211 +97,277 @@
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
-                 <!--    <hr>
+                    <!--    <hr>
                     
 						
 						
                     <hr> -->
-					<p><i><span style="color: #000; font-size: 1.7em;">Safe Learning in Robotics:</span></i></p>
-					<br />
+                    <p><i><span style="color: #000; font-size: 1.7em;">Safe Learning in Robotics:</span></i></p>
+                    <br />
                     <img class="img-responsive img-left" src="img/PendulumDynamics.png" alt="" width="220" height="70">
                     <hr class="visible-xs">
                     <h3> </h3>
-					<p>Unmanned vehicles promise to transform many aspects of our lives, including transportation, agriculture, mining, and construction. Successful use of robot autonomy in these areas depends critically on the ability of robots to adapt safely to changing operational conditions. 
-					Recent advances in <b>machine learning</b>  have inspired a new major
-research direction where learning-enabled planning and control can accomplish complex tasks that had been
-intractable in the past.  Two critical considerations for applying these techniques onboard autonomous systems remain: <b>learning online</b>, relying on streaming data, and guaranteeing <b>safe operation</b>, despite the uncertainty of learning algorithms.
-</p>
+                    <p>Unmanned vehicles promise to transform many aspects of our lives, including transportation,
+                        agriculture, mining, and construction. Successful use of robot autonomy in these areas depends
+                        critically on the ability of robots to adapt safely to changing operational conditions.
+                        Recent advances in <b>machine learning</b> have inspired a new major
+                        research direction where learning-enabled planning and control can accomplish complex tasks that
+                        had been
+                        intractable in the past. Two critical considerations for applying these techniques onboard
+                        autonomous systems remain: <b>learning online</b>, relying on streaming data, and guaranteeing
+                        <b>safe operation</b>, despite the uncertainty of learning algorithms.
+                    </p>
 
-<p>
-					Given streaming observations of the system state, we use Bayesian learning to obtain a distribution
-over the robot dynamics. In turn, the distribution is used to optimize the system behavior and
-ensure safety with high probability.</p>
+                    <p>
+                        Given streaming observations of the system state, we use Bayesian learning to obtain a
+                        distribution
+                        over the robot dynamics. In turn, the distribution is used to optimize the system behavior and
+                        ensure safety with high probability.</p>
 
-<p>We pay special attention to the following issues.</p>
+                    <p>We pay special attention to the following issues.</p>
 
- <ul> 
-    <li>
-                 <p> Robots operating in real-world settings must navigate and maintain safety while interacting with many <b>heterogeneous</b>  agents and obstacles. <b>Reinforcement learning</b>  methods have emerged recently, which directly learn actions in <b>multi-agent</b> settings in response to the observed environment. However, these methods provide no formal guarantees of <b>safety</b>. The proposed learning-enabled optimization-based controller prevents the robots from entering unsafe sets in a minimally invasive fashion by projecting desired actions to the closest safe action.<p>
-  </li>
-     <li>
-                 <p><b>Safe exploratory planning</b> is a key yet challenging problem in many engineering domains, such as Mars rover exploration and delivery drones. In context,  a robot is used to explore an environment with an unknown, state-dependent disturbance function while avoiding some forbidden areas. A novel framework to solve such uncertainty-aware safe exploratory problems by combining neural control
-contraction metric with Gaussian
-process is proposed.<p>
-  </li>
+                    <ul>
+                        <li>
+                            <p> Robots operating in real-world settings must navigate and maintain safety while
+                                interacting with many <b>heterogeneous</b> agents and obstacles. <b>Reinforcement
+                                    learning</b> methods have emerged recently, which directly learn actions in
+                                <b>multi-agent</b> settings in response to the observed environment. However, these
+                                methods provide no formal guarantees of <b>safety</b>. The proposed learning-enabled
+                                optimization-based controller prevents the robots from entering unsafe sets in a
+                                minimally invasive fashion by projecting desired actions to the closest safe action.
+                            <p>
+                        </li>
+                        <li>
+                            <p><b>Safe exploratory planning</b> is a key yet challenging problem in many engineering
+                                domains, such as Mars rover exploration and delivery drones. In context, a robot is used
+                                to explore an environment with an unknown, state-dependent disturbance function while
+                                avoiding some forbidden areas. A novel framework to solve such uncertainty-aware safe
+                                exploratory problems by combining neural control
+                                contraction metric with Gaussian
+                                process is proposed.
+                            <p>
+                        </li>
 
-   </ul> 
-
-
-
-
-
-<p>Related publications: 
-<ul>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/Bayes-CBF.pdf">Probabilistic Safety Constraints for Learned High Relative
-Degree System Dynamics</a></li>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/Bayes-CBF-journal.pdf">Control Barriers in Bayesian Learning of System Dynamics</a></li>
-<li><a href="http://www.mit.edu/~mkhojast/Papers/MA-CBF.pdf">Safe Multi-Agent Interaction through Robust Control Barrier Functions
-with Learned Uncertainties</a></li>
-<li><a href="http://www.mit.edu/~mkhojast/Papers/GP-NCCM-L4DC2021.pdf">Uncertainty-Aware Safe Exploratory Planning Using Gaussian Process and Neural Control Contraction Metric</a></li>
-</ul>
-<p>
+                    </ul>
 
 
 
 
 
-				<hr>
-					<br />
-					
-					
-										<p><i><span style="color: #000; font-size: 1.7em;">Data-driven control of quantum systems:</span></i></p>
-					<br />
+                    <p>Related publications:
+                    <ul>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/Bayes-CBF.pdf">Probabilistic Safety Constraints
+                                for Learned High Relative
+                                Degree System Dynamics</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/Bayes-CBF-journal.pdf">Control Barriers in
+                                Bayesian Learning of System Dynamics</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/MA-CBF.pdf">Safe Multi-Agent Interaction
+                                through Robust Control Barrier Functions
+                                with Learned Uncertainties</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/GP-NCCM-L4DC2021.pdf">Uncertainty-Aware Safe
+                                Exploratory Planning Using Gaussian Process and Neural Control Contraction Metric</a>
+                        </li>
+                    </ul>
+                    <p>
+
+
+
+
+
+                        <hr>
+                        <br />
+
+
+                    <p><i><span style="color: #000; font-size: 1.7em;">Data-driven control of quantum
+                                systems:</span></i></p>
+                    <br />
                     <img class="img-responsive img-left" src="img/qControl.png" alt="" width="220" height="70">
                     <hr class="visible-xs">
                     <h3> </h3>
-					<p><b>Quantum engineering</b> is a rapidly growing field that
-seeks to utilize quantum dynamical systems to perform <b>sensing</b>,
-<b>communication</b>, or <b>computation</b> by exploiting the unique resources of quantum mechanics. The success of
-many quantum devices is dependent on precise control of their dynamics. </p>
+                    <p><b>Quantum engineering</b> is a rapidly growing field that
+                        seeks to utilize quantum dynamical systems to perform <b>sensing</b>,
+                        <b>communication</b>, or <b>computation</b> by exploiting the unique resources of quantum
+                        mechanics. The success of
+                        many quantum devices is dependent on precise control of their dynamics.
+                    </p>
 
-<p>
-We attempt to bridge the gap between <b>learning</b>
-and <b>control</b> for quantum systems. By not relying on
-manually-designed models, which can be brittle, our method
-will account for the complexity of real-world applications.
-We utilize a hierarchical design
-that layers quantum state tomography, quantum process tomography, and Hamiltonian
-learning to identify the Hamiltonians. In turn, the learned Hamiltonians is utilized to formalize <b>data-driven optimization-based</b> quantum control techniques.</p>
-<br />
+                    <p>
+                        We attempt to bridge the gap between <b>learning</b>
+                        and <b>control</b> for quantum systems. By not relying on
+                        manually-designed models, which can be brittle, our method
+                        will account for the complexity of real-world applications.
+                        We utilize a hierarchical design
+                        that layers quantum state tomography, quantum process tomography, and Hamiltonian
+                        learning to identify the Hamiltonians. In turn, the learned Hamiltonians is utilized to
+                        formalize <b>data-driven optimization-based</b> quantum control techniques.</p>
+                    <br />
 
-<p>Related publications: 
-<ul>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/MPQC-HL-V31-FE.pdf">Model-Predictive Quantum Control via Hamiltonian Learning</a></li>
-   <li>Lyapunov Quantum Control via Bayesian Hamiltonian Learning (preprint undergoing revision)</li>
-</ul>
-<p>
+                    <p>Related publications:
+                    <ul>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/MPQC-HL-V31-FE.pdf">Model-Predictive Quantum
+                                Control via Hamiltonian Learning</a></li>
+                        <li>Lyapunov Quantum Control via Bayesian Hamiltonian Learning (preprint undergoing revision)
+                        </li>
+                    </ul>
+                    <p>
 
 
 
 
 
-				<hr>
-					<br />
-					
-					
-										<p><i><span style="color: #000; font-size: 1.7em;">Cyber-physical systems security:</span></i></p>
-					<br />
+                        <hr>
+                        <br />
+
+
+                    <p><i><span style="color: #000; font-size: 1.7em;">Cyber-physical systems security:</span></i></p>
+                    <br />
                     <img class="img-responsive img-left" src="img/CPSSec.png" alt="" width="220" height="70">
                     <hr class="visible-xs">
                     <h3> </h3>
-					<p>The distributed nature of cyber-physical systems and cloud
-robotics is their Achilles' heel, as it is a source of vulnerability to cyber-attacks. We concentrate on an important class of attacks called the "man-in-the-middle" (MITM) and
-introduce the problem of <b>learning-based attacks</b> in these systems. The attacker attempts to learn the dynamics of the plant
-and subsequently overrides the controller's actuation signal to destroy the plant without being detected. The
-controller, on the other hand, is constantly on the lookout for an attack. We show how the controller can impede these attacks by superimposing a carefully crafted <b>privacy-enhancing</b> signal upon its
-control policy.</p>
-<p>
-This project is a complement to learning-based approaches for control as we assume the controller has
-perfect knowledge of the system dynamics and tries to discover 
-the attack from its observations.
-The attacker, on the other hand, attempts to learn the system and then destroy it. The assumed information-pattern imbalance
-between the controller and the attacker is justified since the controller is tuned for a much longer time.
-</p>
-<br />
-<p>Related publications:
-<ul>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/Authentication-learning-based.pdf">Learning-Based Attacks in Cyber-Physical Systems</a></li>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/Necsys2019.pdf">Authentication of Cyber-Physical Systems under Learning-Based Attacks</a></li>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/learning_based_attacks_Exp_Vs_Exp.pdf">Learning-Based Attacks in Cyber-Physical Systems: Exploration, Detection, and Control Cost Trade-offs</a></li>
-</ul>  
- <p>
-				<hr>
-					<br />
-					
-					
-															<p><i><span style="color: #000; font-size: 1.7em;">Network Localization and Navigation:</span></i></p>
-					<br />
+                    <p>The distributed nature of cyber-physical systems and cloud
+                        robotics is their Achilles' heel, as it is a source of vulnerability to cyber-attacks. We
+                        concentrate on an important class of attacks called the "man-in-the-middle" (MITM) and
+                        introduce the problem of <b>learning-based attacks</b> in these systems. The attacker attempts
+                        to learn the dynamics of the plant
+                        and subsequently overrides the controller's actuation signal to destroy the plant without being
+                        detected. The
+                        controller, on the other hand, is constantly on the lookout for an attack. We show how the
+                        controller can impede these attacks by superimposing a carefully crafted
+                        <b>privacy-enhancing</b> signal upon its
+                        control policy.
+                    </p>
+                    <p>
+                        This project is a complement to learning-based approaches for control as we assume the
+                        controller has
+                        perfect knowledge of the system dynamics and tries to discover
+                        the attack from its observations.
+                        The attacker, on the other hand, attempts to learn the system and then destroy it. The assumed
+                        information-pattern imbalance
+                        between the controller and the attacker is justified since the controller is tuned for a much
+                        longer time.
+                    </p>
+                    <br />
+                    <p>Related publications:
+                    <ul>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/Authentication-learning-based.pdf">Learning-Based
+                                Attacks in Cyber-Physical Systems</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/Necsys2019.pdf">Authentication of
+                                Cyber-Physical Systems under Learning-Based Attacks</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/learning_based_attacks_Exp_Vs_Exp.pdf">Learning-Based
+                                Attacks in Cyber-Physical Systems: Exploration, Detection, and Control Cost
+                                Trade-offs</a></li>
+                    </ul>
+                    <p>
+                        <hr>
+                        <br />
+
+
+                    <p><i><span style="color: #000; font-size: 1.7em;">Network Localization and Navigation:</span></i>
+                    </p>
+                    <br />
                     <img class="img-responsive img-left" src="img/NLN.png" alt="" width="220" height="70">
                     <hr class="visible-xs">
                     <h3> </h3>
-					<p>Location-awareness is vital for the operation of wireless
-networks and their applications, including factory of
-the future (FoF), smart environments, asset
-tracking, autonomy, and crowdsensing. Network localization and navigation (NLN), where
-a <b>network</b>  of nodes is used to aid in localizing its members, is crucial for developing mass-market services and applications in the <b>Internet of Things (IoT)</b>  era.</p>
+                    <p>Location-awareness is vital for the operation of wireless
+                        networks and their applications, including factory of
+                        the future (FoF), smart environments, asset
+                        tracking, autonomy, and crowdsensing. Network localization and navigation (NLN), where
+                        a <b>network</b> of nodes is used to aid in localizing its members, is crucial for developing
+                        mass-market services and applications in the <b>Internet of Things (IoT)</b> era.</p>
 
-<br />
+                    <br />
 
-<p>We pay special attention to the following issues.</p>
- <ul> 
-    <li>
-                 <p> In applications such as <b>ocean-of-things (OoT)</b> or <b>indoor positioning</b>, due to external disturbances and obstacles, inaccuracies appear between the desired and the actual deployed position of the nodes. These position inaccuracies may also occur in adversarial scenarios, where an <b>adversary</b> aims to hamper the localization process of legitimate nodes by forcing them to move from their initial or desired positions.<p>
-  </li>
-     <li>
-                 <p>Adversaries may exploit location information to perform carefully crafted attacks on cyber-physical systems. Therefore, studying and preventing such security breaches by enhancing
-agents’ location secrecy is vital. <b>Location secrecy</b> is also critical in applications such as adversarial search-and-rescue missions and pursuit-evasion in mobile robotic settings.<p>
-  </li>
+                    <p>We pay special attention to the following issues.</p>
+                    <ul>
+                        <li>
+                            <p> In applications such as <b>ocean-of-things (OoT)</b> or <b>indoor positioning</b>, due
+                                to external disturbances and obstacles, inaccuracies appear between the desired and the
+                                actual deployed position of the nodes. These position inaccuracies may also occur in
+                                adversarial scenarios, where an <b>adversary</b> aims to hamper the localization process
+                                of legitimate nodes by forcing them to move from their initial or desired positions.
+                            <p>
+                        </li>
+                        <li>
+                            <p>Adversaries may exploit location information to perform carefully crafted attacks on
+                                cyber-physical systems. Therefore, studying and preventing such security breaches by
+                                enhancing
+                                agents’ location secrecy is vital. <b>Location secrecy</b> is also critical in
+                                applications such as adversarial search-and-rescue missions and pursuit-evasion in
+                                mobile robotic settings.
+                            <p>
+                        </li>
 
-   </ul> 
-
-			
-<br />
-
-
-
-<p>Related publications: 
-<ul>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/ND-Pairing-V11.pdf">Node Deployment under Position Uncertainty for Network Localization</a></li>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/S-NLN-V44-FE.pdf">Location Secrecy Enhancement in Adversarial Networks via Trajectory Control</a></li>
-</ul>
-<p>
-
+                    </ul>
 
 
+                    <br />
 
 
-				<hr>
-					<br />
-					
-					
-							<p><i><span style="color: #000; font-size: 1.7em;">Communication in cyber-physical systems:</span></i></p>
-					<br />
+
+                    <p>Related publications:
+                    <ul>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/ND-Pairing-V11.pdf">Node Deployment under
+                                Position Uncertainty for Network Localization</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/S-NLN-V44-FE.pdf">Location Secrecy Enhancement
+                                in Adversarial Networks via Trajectory Control</a></li>
+                    </ul>
+                    <p>
+
+
+
+
+
+                        <hr>
+                        <br />
+
+
+                    <p><i><span style="color: #000; font-size: 1.7em;">Communication in cyber-physical
+                                systems:</span></i></p>
+                    <br />
                     <img class="img-responsive img-left" src="img/Pendulum.jpg" alt="" width="220" height="70">
                     <hr class="visible-xs">
                     <h3> </h3>
-					<p>Recent technological advances in networking, communication, and computation technologies have
-					enabled the development of cyber-physical systems and cloud robotics, where
-computing, communication, and control are tightly coupled and integrated into a single
-distributed platform. In most of these systems, the feedback
-loop is closed over a communication channel. In this context, we study <b>event-triggering</b> strategies that utilize timing information
-by transmitting in a state-dependent fashion. Compared to the conventional time-triggering setups, the proposed event-triggering strategies utilize the 
-available communication resources more efficiently.</p>
-<br />
-<p>Selected publications: 
-<ul>
-<li><a href="http://www.mit.edu/~mkhojast/Papers/ET-review-V26.pdf">Information Flow in Event-Based Stabilization of Cyber-Physical Systems</a></li>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/CDC19.pdf">Theory and Implementation of Event-Triggered Stabilization over Digital Channels</a></li>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/ETdisturbanceTiming.pdf">Exploiting Timing Information in Event-Triggered Stabilization of Linear Systems with Disturbances</a></li>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/timing-information-event-J.pdf">The Value of Timing Information in Event-Triggered Control</a></li>
-   <li><a href="http://www.mit.edu/~mkhojast/Papers/TTVET.pdf">Time-Triggering versus Event-Triggering Control over Communication Channels</a>
-  <li><a href="http://www.mit.edu/~mkhojast/Papers/timing_journal.pdf">Stabilizing a Linear System Using Phone Calls: When Time Is Information</a></li>
-</ul>
-<p>
-				<hr>
-					<br />
-					
-					
-			
+                    <p>Recent technological advances in networking, communication, and computation technologies have
+                        enabled the development of cyber-physical systems and cloud robotics, where
+                        computing, communication, and control are tightly coupled and integrated into a single
+                        distributed platform. In most of these systems, the feedback
+                        loop is closed over a communication channel. In this context, we study <b>event-triggering</b>
+                        strategies that utilize timing information
+                        by transmitting in a state-dependent fashion. Compared to the conventional time-triggering
+                        setups, the proposed event-triggering strategies utilize the
+                        available communication resources more efficiently.</p>
+                    <br />
+                    <p>Selected publications:
+                    <ul>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/ET-review-V26.pdf">Information Flow in
+                                Event-Based Stabilization of Cyber-Physical Systems</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/CDC19.pdf">Theory and Implementation of
+                                Event-Triggered Stabilization over Digital Channels</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/ETdisturbanceTiming.pdf">Exploiting Timing
+                                Information in Event-Triggered Stabilization of Linear Systems with Disturbances</a>
+                        </li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/timing-information-event-J.pdf">The Value of
+                                Timing Information in Event-Triggered Control</a></li>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/TTVET.pdf">Time-Triggering versus
+                                Event-Triggering Control over Communication Channels</a>
+                        <li><a href="http://www.mit.edu/~mkhojast/Papers/timing_journal.pdf">Stabilizing a Linear System
+                                Using Phone Calls: When Time Is Information</a></li>
+                    </ul>
+                    <p>
+                        <hr>
+                        <br />
+
+
+
                 </div>
-              
+
             </div>
         </div>
 
     </div>
     <!-- /.container -->
 
-    
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -306,9 +377,9 @@ available communication resources more efficiently.</p>
 
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
     </script>
 
 </body>
